@@ -16,6 +16,9 @@ namespace Microsoft.CodeAnalysis.CSharp.Scripting
     /// </summary>
     public static class CSharpScript
     {
+
+        public static CSharpParseOptions ParseOptions { get; set; } = new CSharpParseOptions(kind: SourceCodeKind.Script);
+
         /// <summary>
         /// Create a new C# script.
         /// </summary>
